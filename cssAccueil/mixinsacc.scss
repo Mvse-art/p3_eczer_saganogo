@@ -1,0 +1,52 @@
+@mixin tailleconres 
+{
+    width: 330px;
+    height: 268px;
+}
+@mixin tailleconfiltre 
+{
+    
+    width: 415px;
+    height: 80px;
+}
+@mixin border
+{
+    border: 2px solid black;
+}
+@mixin raduisfiltre 
+{
+    border-radius: 20px;
+}
+@mixin raduisresto
+{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+@mixin margintop 
+{
+    margin-top: 20px;
+}
+@mixin padentete 
+{
+    padding-top: 50px;
+}
+@mixin padexplore 
+{
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+@mixin padfiltre 
+{
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+@mixin padresto 
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@mixin padfin 
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

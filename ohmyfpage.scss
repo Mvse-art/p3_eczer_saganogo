@@ -1,0 +1,85 @@
+@import "cssAccueil/mixinsacc.scss";
+
+
+.entrées
+{
+
+    background-color: chocolate;
+    
+}
+.plats
+{
+    background-color: cornsilk;
+}
+.dessert
+{
+ 
+    background-color: chartreuse;
+    
+}
+
+ $plats : entrées, plats, dessert;
+
+@each $plat in $plats
+{
+    .#{$plat}
+    {
+        display: flex;
+        flex-wrap: wrap;
+        @include border;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+.plat
+    {
+        display: flex;
+        @include border;
+        width: 400px;
+        height: 60px;
+        justify-content: space-evenly;
+        
+        
+    }
+
+.menu1
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.interieurhaut
+{
+    background-color: indianred;
+}
+.interieurbas
+{
+    background-color: orchid;
+
+}
+.prix
+{
+    background-color: powderblue;
+    height: 20px;
+    width: 50px;
+    @include border;
+}
+.dedans
+{
+    @include border;
+    width: 100%;
+}
+.titreplat
+{
+    flex: 0 0 100%;
+}
+
+#testdiv{
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 150px;
+}
