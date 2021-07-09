@@ -2,90 +2,173 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cssAccueil/resetomf.css">
     <link rel="stylesheet" href="cssAccueil/ohmyfacc.css">
+    <link rel="stylesheet" href="all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
 </head>
 <body>
     <div class="wrapper">
-    <div id="entete">
-        <h1>OH MY FOOD</h1>
+ <div id="Ohmyf">
         <div id="logo">
+            <img alt="logo" src="ohmyfd.png">
         </div>
-        <div id="lieu">
-            Paris,Belleville
+</div>
+<div id="entete">
+        <div id="each">
+            
+          <div id="fascont"><i class="fas fa-map-marker-alt"></i></div>
+           <div><input type="text" name="recherche" id="recherche" placeholder="Paris, Belleville" value=""></div>
         </div>
-    </div>
+</div>
 
-    <div id="explore">
+ <div id="explore">
         <div id="texteintro">
-            Reservez le menu qui vous convient
+            <h1>Reservez le menu qui vous convient</h1>
             <br>
-            Découvrez des restaurants d'exception, sélectionnés par nos soins
+            <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins</h2>
         </div>
-        <div id="bouton"></div>
-    </div>
+</div>
+<div id="bouton">
+         <button class="button"type="button">Explore</button>
+</div>
 
-    <div id="filtre">
+ <div id="filtre">
         <div class="titre">
         <h1>fonctionnement</h1>
         </div>
         <div class="div1">
             <div class="chiffre"></div>
-            <div class="icone"></div>
-            <div class="phrase"></div>
+            <div class="icone">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="phrase">
+                <p>Choisissez un reestaurant</p>
+            </div>
         </div>
         <div class="div1">
             <div class="chiffre"></div>
-            <div class="icone"></div>
-            <div class="phrase"></div>
+            <div class="icone">
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div class="phrase">
+                <p>Composer votre menu</p> 
+            </div>
         </div>
         <div class="div1">
             <div class="chiffre"></div>
-            <div class="icone"></div>
-            <div class="phrase"></div>
+            <div class="icone">
+                <i class="fas fa-store"></i>
+            </div>
+            <div class="phrase">
+                <p>Dégustez au restaurant</p>
+            </div>
         </div>
-    </div>
+        <ol class="liste">
 
-    <div id="restauration">
+            <li>
+                <div class="icone">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="phrase">
+                    <p>Choisissez un reestaurant</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="icone">
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <div class="phrase">
+                    <p>Composer votre menu</p> 
+                </div>
+            </li>
+            <li>
+                <div class="icone">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="phrase">
+                    <p>Dégustez au restaurant</p>
+                </div>
+
+
+            </li>
+
+
+
+        </ol>
+
+
+
+     
+   
+ </div>
+
+<div id="restauration">
         <div class="titre">
         <h1>Restauration</h1>
          </div>
         <div class="cadrephoto">
-            <div class="photo"></div>
+            <div class="photo">
+                <img src="images/restaurants/jay.jpg" alt="image1">
+            </div>
             <div class="textephoto">
+                <div class="texte">
+                <h1>La palette du gout</h1>
+                <h2>Ménilmontant</h2>
+            </div>
                 <div class="coeur"></div>
             </div>
         </div>
         <div class="cadrephoto">
-            <div class="photo"></div>
+            <div class="photo">
+                <img src="images/restaurants/stil.jpg" alt="image2">
+            </div>
             <div class="textephoto">
+                <div class="texte">
+                <h1>La note enchantée</h1>
+                <h2>Charonne</h2>
+                </div>
                 <div class="coeur"></div>
             </div>
         </div>
         <div class="cadrephoto">
-            <div class="photo"></div>
+            <div class="photo">
+                <img src="images/restaurants/toa.jpg" alt="image3">
+            </div>
             <div class="textephoto">
+                <div class="texte">
+                <h1>A la francaise</h1>
+                <h2>Cité Rouge</h2>
+            </div>
                 <div class="coeur"></div>
             </div>
         </div>
         <div class="cadrephoto">
-            <div class="photo"></div>
+            <div class="photo">
+                <img src="images/restaurants/louis.jpg" alt="image4">
+            </div>
             <div class="textephoto">
+                <div class="texte">
+                <h1>Le délice des sens</h1>
+                <h2>Folie-Méricourt</h2>
+                </div>
                 <div class="coeur"></div>
             </div>
         </div>
     </div>
 </div>
+<footer>
     <div id="fin">
         <div class="titre"> 
-            <h1>OH MY FOOD </h1>
+            <img alt="logo" src="ohmyfd.png">
         </div>
         <p>Proposer un restaurant</p>
         <p>Devenir partenaire</p>
         <p>Mention légales</p>
         <p>Contact</p>
     </div>
+    </footer>
 </body>
 </html>

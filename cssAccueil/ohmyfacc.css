@@ -8,15 +8,20 @@ body {
 
 #entete {
   background-color: aqua;
-  border: 2px solid black;
+  border: 1px solid black;
   margin-top: 20px;
-  padding-top: 50px;
   width: 100%;
-  height: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#lieu {
-  border: 2px solid black;
+#entete #lieu {
+  border: 1px solid black;
   height: 10px;
   width: 200px;
   background-color: blanchedalmond;
@@ -24,16 +29,14 @@ body {
 
 #explore {
   background-color: red;
-  border: 2px solid black;
+  border: 1px solid black;
   margin-top: 20px;
-  padding-top: 150px;
-  padding-bottom: 20px;
   width: 100%;
   height: 140px;
 }
 
-#bouton {
-  border: 2px solid black;
+#explore #bouton {
+  border: 1px solid black;
   height: 30px;
   width: 60px;
   background-color: blanchedalmond;
@@ -45,11 +48,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: blueviolet;
-  border: 2px solid black;
+  border: 1px solid black;
   margin-top: 20px;
   padding-top: 70px;
   padding-bottom: 20px;
@@ -58,24 +61,24 @@ body {
 }
 
 .chiffre {
-  width: 30%;
+  /*  width: 30%;*/
   background-color: darkslategray;
-  border: 2px solid black;
-  height: 33%;
+  /*  @include border;*/
+  /*  height: 33%;*/
 }
 
 .icone {
-  width: 30%;
+  /*  width: 30%;*/
   background-color: darkcyan;
-  border: 2px solid black;
-  height: 33%;
+  /*@include border;*/
+  /* height: 33%;*/
 }
 
 .phrase {
-  width: 30%;
+  /* width: 30%;*/
   background-color: lightseagreen;
-  border: 2px solid black;
-  height: 33%;
+  /*  @include border;*/
+  /*  height: 33%;*/
 }
 
 #restauration {
@@ -88,7 +91,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-color: royalblue;
-  border: 2px solid black;
+  border: 1px solid black;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -98,7 +101,7 @@ body {
 
 #fin {
   background-color: salmon;
-  border: 2px solid black;
+  border: 1px solid black;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -113,7 +116,7 @@ body {
   background-color: blanchedalmond;
   width: 415px;
   height: 80px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 20px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -122,9 +125,9 @@ body {
 
 .cadrephoto {
   background-color: burlywood;
-  border: 2px solid black;
-  width: 330px;
-  height: 268px;
+  border: 1px solid black;
+  width: 310px;
+  height: 280px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -136,9 +139,22 @@ body {
   border-top-left-radius: 20px;
 }
 
+.photo img {
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
 .textephoto {
   background-color: darkkhaki;
   height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .coeur {
@@ -151,5 +167,70 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+}
+
+#texteintro {
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 280px;
+  height: 45px;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9693d2), color-stop(#f12fe2), to(#d2f7ff));
+  background: linear-gradient(#9693d2, #f12fe2, #d2f7ff);
+}
+
+#explore h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#explore h2 {
+  font-size: 20px;
+}
+
+#recherche {
+  width: 315px;
+  height: 40px;
+}
+
+#each {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 375px;
+}
+
+#each .fas {
+  width: 53px;
+}
+
+#Ohmyf {
+  border: 1px solid black;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ol.liste {
+  list-style-type: decimal;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+li {
+  border: 1px solid black;
+  width: 200px;
 }
 /*# sourceMappingURL=ohmyfacc.css.map */
