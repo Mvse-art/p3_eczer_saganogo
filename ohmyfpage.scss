@@ -1,17 +1,31 @@
 @import "cssAccueil/mixinsacc.scss";
 
-
+.wrapper
+{
+    margin-inline: 10px;
+}
 .entrées
 {
 
     height: 215px;
     background-color:#f6f6f6 ;
+
+    @media (max-width: 599px)
+    {
+        margin-bottom: 20px;
+    }
     
 }
 .plats
 {
     height: 215px;
     background-color:#f6f6f6 ;
+
+    @media (max-width: 599px)
+    {
+        margin-bottom: 19px;
+    }
+
 }
 .dessert
 {
@@ -41,9 +55,13 @@
         height: 80px;
         justify-content: space-evenly;
         border-radius: 10px;
-        box-shadow: 0 5px 15px 0 black;
-        
-        
+        box-shadow: 2px 7px 10px 2px #e0e0e0;
+
+        @media (max-width: 599px)
+        {
+            margin-bottom: 12px;
+            height: 50px;
+        }
         
     }
 
@@ -56,37 +74,85 @@
 
 .interieurhaut
 {
-    background-color: indianred;
+    
     height: 50%;
     border-top-left-radius: 10px;
 }
+
+
 .interieurbas
 {
-    background-color: orchid;
+  
     height: 50%;
     border-bottom-left-radius: 10px;
 
 }
 .prix
 {
-    background-color: powderblue;
+  
     height: 100%;
     width: 20%;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
 }
+.icone
+{
+    height: 100%;
+    width: 80px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: darkturquoise;
+    margin-right: -100px;
+}
+
+.plat 
+{
+    display: flex;
+    width: 400px;
+    height: 80px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 2px 7px 10px 2px #e0e0e0;
+      overflow:hidden;
+     
+    &:hover 
+    {
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+       
+   
+        > .icone 
+        {
+          transition: all 0.5s ease-out;
+          margin-right: -40px;
+          display: inline-block;
+         }
+    }
+}
+    
+ @media (max-width: 599px) 
+ {
+    .plat 
+        {
+             margin-bottom: 12px;
+            height: 50px;
+        }
+    }
+    
 .dedans
 {
-    @include border;
     width: 100%;
 }
 .titreplat
 {
     flex: 0 0 100%;
     height: 35px;
+    text-decoration: underline #99e2d0;
 }
 
-#testdiv{
+#testdiv
+{
     background-color: burlywood;
     display: flex;
     flex-wrap: wrap;
@@ -99,8 +165,12 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    @media (max-width: 599px)
+    {
+        height: 175px;
+        flex-wrap: wrap;
+    }
 }
 #Nomplat
 {
@@ -138,42 +208,117 @@ footer
 {
     height: 240px;
 }
-#log
-{
-    background-color:#333;
-    height: 40%;
-
-}
 #infos
 {
     background-color: #333;
     height: 60%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 #command
 {
     height: 90px;
     display: flex;
     justify-content: center;
     background-color:#f6f6f6 ;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
-    .button
+    @media (max-width: 599px)
+    {
+        align-items: center;
+    }
+
+    .button 
     {
         height: 65px;
         border-radius: 30px;
         background: linear-gradient(#9693d2, #f12fe2, #d2f7ff);
         width: 190px;
+        border: none;
+        box-shadow: 2px 7px 10px 2px #e0e0e0;
     }
 
-
+    .button:hover
+    {
+        box-shadow:0 0 11px rgba(33,33,33,.2) ;
+    }
 }
+
 h1
 {
     font-size: 20px;
     font-weight: bold;
+    text-overflow: ellipsis;
 }
 h3
 {
     font-size: 33px;
     font-family:Shrikhand;
+}
+#logo
+{
+    display: flex;
+    justify-content: center;
+
+    img
+    {
+        @media (max-width: 599px)
+        {
+            width: 100%;
+        }
+    }
+}
+.divinfo
+{
+    display: flex;
+    
+    .fas
+    {
+        margin-right: 10px;
+    }
+ }
+
+.button1
+{
+    
+        height: 65px;
+        border-radius: 30px;
+        background: linear-gradient( #f12fe2, #d2f7ff);
+        width: 190px;
+        border: none;
+        box-shadow: inset 0 0 0 0 #f9e506;
+        transition: ease-out 0.3s;
+        outline: none;
+
+        h4
+        {
+            display: none;
+        }
+}
+.button1:hover
+{
+    box-shadow: inset -500px 0 0 0 #f9e506;
+   
+    p
+    {
+        display: none;
+    }
+    h4 
+    {
+        display: inline;
+    }
+}
+.derriere
+{
+    width: 30px;
+    background-color: chartreuse;
+}
+.fa-check-circle
+{
+    color: white;
+    font-size: 24px;
 }
