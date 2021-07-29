@@ -96,15 +96,22 @@
     border-top-right-radius: 10px;
     display: flex;
     align-items: center;
+
 }
 .icone
 {
     height: 100%;
-    width: 80px;
+    width: 100px;
+    padding-top: 30px;
+    padding-left: 8px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: darkturquoise;
     margin-right: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .plat 
@@ -129,6 +136,13 @@
           transition: all 0.5s ease-out;
           margin-right: -40px;
           display: inline-block;
+         }
+
+         .fa-check-circle
+         {
+             transform: rotate(360deg);
+             transition: 1s;
+     
          }
     }
 }
@@ -325,6 +339,7 @@ h3
 {
     color: white;
     font-size: 24px;
+    
 }
 @-webkit-keyframes opacity {
     0% {
@@ -400,7 +415,8 @@ h3
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
-   
+    animation: hideAnimation 0s ease-in 2s;
+    animation-fill-mode: forwards;
     
 
     &:before{
@@ -436,3 +452,40 @@ h3
      clip-path: inset(100% 0 0 0 0);
     }
   }
+  @keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+    }
+.divinfo a
+{
+    text-decoration: none;
+    color: white;
+}
+a
+{
+    color: black;
+}
+.logimg img
+{
+    @media (max-width: 599px)
+{
+    width: 100%;
+}
+}
+
+#logo
+{
+    display: flex;
+    justify-content: center;
+}
+
+#logo img
+{
+    @media (max-width: 599px)
+{
+    width: 100%;
+}
+}
